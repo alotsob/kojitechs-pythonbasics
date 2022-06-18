@@ -7,9 +7,9 @@ import os
 
 def sending_sms(sending_to, message):
     try:
-        account_sid = os.environ.get("ACCOUNT_SID") # AC80b95afbb503d667e3009c229367d2b4
-        auth_Token = os.environ.get("AUTH_TOKEN") # 46124cc1d38e9ffb165ac8cbb00fb265
-        twilio_number = os.environ.get("TWILIO_NUMBER") # +17153333722
+        account_sid = os.environ.get("ACCOUNT_SID") 
+        auth_Token = os.environ.get("AUTH_TOKEN") 
+        twilio_number = os.environ.get("TWILIO_NUMBER") 
 
         client = Client(account_sid, auth_Token)
         client.messages.create(
